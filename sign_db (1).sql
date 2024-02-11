@@ -1,0 +1,378 @@
+-- phpMyAdmin SQL Dump
+-- version 5.2.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Feb 01, 2024 at 04:17 PM
+-- Server version: 10.4.28-MariaDB
+-- PHP Version: 8.2.4
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `sign_db`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `account`
+--
+
+CREATE TABLE `account` (
+  `rollno` varchar(10) NOT NULL,
+  `name` varchar(50) NOT NULL,
+  `dues` tinyint(1) NOT NULL,
+  `remark` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `account`
+--
+
+INSERT INTO `account` (`rollno`, `name`, `dues`, `remark`) VALUES
+('CS3201', 'HANGE YASHVANT MAHADEV', 1, 'nil'),
+('CS3202', 'LAKHE SHIVDATT RAMESH', 1, 'nil'),
+('CS3203', 'KALDATE VAIBHAV GAJANAN', 1, 'nil'),
+('CS3204', 'KOLHE SAMARTH SHAHU', 1, 'nil'),
+('CS3205', 'JAWANJAL TANISHQ LAXMAN', 1, 'nil'),
+('CS3206', 'GADEKAR OM HARIBHAU', 1, 'nil'),
+('CS3207', 'BAWASKAR ANAND MAHESH', 1, 'nil'),
+('CS3208', 'BAKHARE RUSHIKESH VIJAY', 1, 'nil'),
+('CS3209', 'CHOPADE ANAND GANESH', 1, 'nil'),
+('CS3210', 'DUDHATE YOGESH MUNJAJI', 1, 'nil'),
+('CS3211', 'AKADE UMESH RAMESH', 1, 'nil'),
+('CS3212', 'CHOUDHARI DIVYA LAXMANRAO', 1, 'nil'),
+('CS3213', 'DURPADE DHANASHREE BABURAO', 1, 'nil'),
+('CS3214', 'KAD ATHARVA DILIP', 1, 'nil'),
+('CS3215', 'IDHATE NILESH BALA', 1, 'nil'),
+('CS3216', 'GADEKAR SUYOG KAMALAKAR', 1, 'nil'),
+('CS3217', 'CHAKRAVORTY DAYEETA TOOFAN', 1, 'nil'),
+('CS3218', 'SHAH KEDAR ARUN', 1, 'nil'),
+('CS3219', 'TETWAR GAURAV RAJU', 1, 'nil'),
+('CS3220', 'AUTE KRISHNA DNYANESHWAR', 1, 'nil'),
+('CS3221', 'DARWANTE SWAPNIL DINKAR', 1, 'nil'),
+('CS3222', 'ARAB ZOYA KHALID', 1, 'nil'),
+('CS3223', 'BHISE PRATIKSHA MADAN', 1, 'nil'),
+('CS3224', 'KHANDARE ANAGHA SANTOSH', 1, 'nil'),
+('CS3225', 'KULKARNI SHANTANU ANANT', 1, 'nil'),
+('CS3226', 'MESHRAM TEJAS CHAKRADHAR', 1, 'nil'),
+('CS3227', 'BAJPAI SNEHA VIJAY', 1, 'nil'),
+('CS3228', 'KULKARNI RUSHIKESH RAVINDRA', 1, 'nil'),
+('CS3229', 'SADIYA FATIMA KHWAJA', 1, 'nil'),
+('CS3230', 'DESHMUKH RENUKA RAM', 1, 'nil'),
+('CS3231', 'KUNTE KHUSHI SANDEEP', 1, 'nil'),
+('CS3232', 'BHUJANG HEMANT ANAND', 1, 'nil'),
+('CS3233', 'KHAN TABISH SHOKAT PATHAN', 1, 'nil'),
+('CS3234', 'AGRAWAL MAYANK JAYESH', 1, 'nil'),
+('CS3235', 'CHOPDE ANIKET SOMNATH', 1, 'nil'),
+('CS3236', 'MISAL TEJAS RAMESH', 1, 'nil'),
+('CS3237', 'MHATRE SAHIL RAJESH', 1, 'nil'),
+('CS3238', 'BHUTEKAR BHAGYASHRI ARUN', 1, 'nil'),
+('CS3239', 'CHAUDHARI ROHAN RANJIT', 1, 'nil'),
+('CS3240', 'BAHIR ASHWINI LAXMAN', 1, 'nil'),
+('CS3241', 'KHANDARE RUPALI RAMESHWAR', 1, 'nil'),
+('CS3242', 'BHUJBAL PRASAD SANDEEP', 1, 'nil'),
+('CS3243', 'KULKARNI GAURAVI MILIND', 1, 'nil'),
+('CS3244', 'KULKARNI RENUKA SUDHIR', 1, 'nil'),
+('CS3245', 'BIKKAD SIDDHI SUMANTRAO', 1, 'nil'),
+('CS3246', 'DUBEY PRANJALI SATYANARAYAN', 1, 'nil'),
+('CS3247', 'AWASTHI SHRUTI SUSHIL', 1, 'nil'),
+('CS3248', 'KALAWAR POOJA GANGAREDDY', 1, 'nil'),
+('CS3249', 'JAGDALE SAEE PRASHANT', 1, 'nil'),
+('CS3250', 'GAIKWAD SHUBHANGI RAMESH', 1, 'nil'),
+('CS3251', 'KADAM SHIVKUMAR SUNIL', 1, 'nil'),
+('CS3252', 'CHAVAN SANIKA SANTOSH', 1, 'nil'),
+('CS3253', 'KHANKE MRUNAL VISHNU', 1, 'nil'),
+('CS3254', 'JAIN SAMYAK DILIP', 1, 'nil'),
+('CS3255', 'BAHAKIM WALEED BIN JUMAN', 1, 'nil'),
+('CS3256', 'JADHAV ABHAY PRATAPRAO', 1, 'nil'),
+('CS3257', 'BHOSLE YASHWANT BHUJANGRAO', 1, 'nil'),
+('CS3258', 'DESHMUKH SHREYA GANESH', 1, 'nil'),
+('CS3259', 'AATIF AHMED ABDUL RAHEEM', 1, 'nil'),
+('CS3260', 'DALAL RUTUJA ANIL', 1, 'nil'),
+('CS3261', 'PAWAR SWAPNIL SURESH', 1, 'nil'),
+('CS3262', 'SONAWANE SNEHA VIJAY', 1, 'nil'),
+('CS3263', 'SARODE SIDDHANT SURAJ', 1, 'nil'),
+('CS3264', 'PATIL SAHIL SANJAY', 1, 'nil'),
+('CS3265', 'TRIBHUWAN SIDDHI SUDHAKAR', 1, 'nil'),
+('CS3266', 'KAKDE SAKSHI SANJAY', 1, 'nil'),
+('CS3267', 'KENDRE SHITAL VITTHAL', 1, 'nil'),
+('CS3268', 'DESHPANDE SAYLI ATUL', 1, 'nil'),
+('CS3269', 'GIRI SAMRUDDHI SHIRISH', 1, 'nil'),
+('CS3270', 'NILE VAISHALI KIRTIKUMAR ', 1, 'nil'),
+('CS3271', 'KSHIRSAGAR GARGI NANDKISHOR', 1, 'nil'),
+('CS3272', 'PRADHAN SNEHAL SANJAY', 1, 'nil'),
+('CS3273', 'DESHPANDE ADITI AJAY', 1, 'nil'),
+('CS3274', 'PENDHARKAR MANISHA LALSING', 1, 'nil'),
+('CS3275', 'DONGRE OM BHAGWAN', 1, 'nil'),
+('CS3276', 'HADULE ROHIT LAXMAN', 1, 'nil');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `library`
+--
+
+CREATE TABLE `library` (
+  `prn` decimal(30,0) NOT NULL,
+  `rollno` varchar(10) NOT NULL,
+  `name` varchar(50) NOT NULL,
+  `dues` tinyint(1) NOT NULL,
+  `remark` varchar(30) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `library`
+--
+
+INSERT INTO `library` (`prn`, `rollno`, `name`, `dues`, `remark`) VALUES
+(2121141242079, 'CS3201', 'HANGE YASHVANT MAHADEV', 1, 'nil'),
+(2121141242080, 'CS3202', 'LAKHE SHIVDATT RAMESH', 1, 'nil'),
+(2121141242081, 'CS3203', 'KALDATE VAIBHAV GAJANAN', 1, 'nil'),
+(2121141242082, 'CS3204', 'KOLHE SAMARTH SHAHU', 1, 'nil'),
+(2121141242083, 'CS3205', 'JAWANJAL TANISHQ LAXMAN', 1, 'nil'),
+(2121141242085, 'CS3206', 'GADEKAR OM HARIBHAU', 1, 'nil'),
+(2121141242086, 'CS3207', 'BAWASKAR ANAND MAHESH', 1, 'nil'),
+(2121141242087, 'CS3208', 'BAKHARE RUSHIKESH VIJAY', 1, 'nil'),
+(2121141242088, 'CS3209', 'CHOPADE ANAND GANESH', 1, 'nil'),
+(2121141242089, 'CS3210', 'DUDHATE YOGESH MUNJAJI', 1, 'nil'),
+(2121141242090, 'CS3211', 'AKADE UMESH RAMESH', 1, 'nil'),
+(2121141242091, 'CS3212', 'CHOUDHARI DIVYA LAXMANRAO', 1, 'nil'),
+(2121141242092, 'CS3213', 'DURPADE DHANASHREE BABURAO', 1, 'nil'),
+(2121141242093, 'CS3214', 'KAD ATHARVA DILIP', 1, 'nil'),
+(2121141242094, 'CS3215', 'IDHATE NILESH BALA', 1, 'nil'),
+(2121141242095, 'CS3216', 'GADEKAR SUYOG KAMALAKAR', 1, 'nil'),
+(2121141242096, 'CS3217', 'CHAKRAVORTY DAYEETA TOOFAN', 1, 'nil'),
+(2121141242097, 'CS3218', 'SHAH KEDAR ARUN', 1, 'nil'),
+(2121141242098, 'CS3219', 'TETWAR GAURAV RAJU', 1, 'nil'),
+(2121141242099, 'CS3220', 'AUTE KRISHNA DNYANESHWAR', 1, 'nil'),
+(2121141242100, 'CS3221', 'DARWANTE SWAPNIL DINKAR', 1, 'nil'),
+(2121141242101, 'CS3222', 'ARAB ZOYA KHALID', 1, 'nil'),
+(2121141242102, 'CS3223', 'BHISE PRATIKSHA MADAN', 1, 'nil'),
+(2121141242103, 'CS3224', 'KHANDARE ANAGHA SANTOSH', 1, 'nil'),
+(2121141242104, 'CS3225', 'KULKARNI SHANTANU ANANT', 1, 'nil'),
+(2121141242105, 'CS3226', 'MESHRAM TEJAS CHAKRADHAR', 1, 'nil'),
+(2121141242106, 'CS3227', 'BAJPAI SNEHA VIJAY', 1, 'nil'),
+(2121141242107, 'CS3228', 'KULKARNI RUSHIKESH RAVINDRA', 1, 'nil'),
+(2121141242108, 'CS3229', 'SADIYA FATIMA KHWAJA', 1, 'nil'),
+(2121141242109, 'CS3230', 'DESHMUKH RENUKA RAM', 1, 'nil'),
+(2121141242110, 'CS3231', 'KUNTE KHUSHI SANDEEP', 1, 'nil'),
+(2121141242111, 'CS3232', 'BHUJANG HEMANT ANAND', 1, 'nil'),
+(2121141242112, 'CS3233', 'KHAN TABISH SHOKAT PATHAN', 1, 'nil'),
+(2121141242113, 'CS3234', 'AGRAWAL MAYANK JAYESH', 1, 'nil'),
+(2121141242114, 'CS3235', 'CHOPDE ANIKET SOMNATH', 1, 'nil'),
+(2121141242115, 'CS3236', 'MISAL TEJAS RAMESH', 1, 'nil'),
+(2121141242116, 'CS3237', 'MHATRE SAHIL RAJESH', 1, 'nil'),
+(2121141242117, 'CS3238', 'BHUTEKAR BHAGYASHRI ARUN', 1, 'nil'),
+(2121141242118, 'CS3239', 'CHAUDHARI ROHAN RANJIT', 1, 'nil'),
+(2121141242119, 'CS3240', 'BAHIR ASHWINI LAXMAN', 1, 'nil'),
+(2121141242120, 'CS3241', 'KHANDARE RUPALI RAMESHWAR', 1, 'nil'),
+(2121141242121, 'CS3242', 'BHUJBAL PRASAD SANDEEP', 1, 'nil'),
+(2121141242122, 'CS3243', 'KULKARNI GAURAVI MILIND', 1, 'nil'),
+(2121141242123, 'CS3244', 'KULKARNI RENUKA SUDHIR', 1, 'nil'),
+(2121141242124, 'CS3245', 'BIKKAD SIDDHI SUMANTRAO', 1, 'nil'),
+(2121141242125, 'CS3246', 'DUBEY PRANJALI SATYANARAYAN', 1, 'nil'),
+(2121141242126, 'CS3247', 'AWASTHI SHRUTI SUSHIL', 1, 'nil'),
+(2121141242127, 'CS3248', 'KALAWAR POOJA GANGAREDDY', 1, 'nil'),
+(2121141242128, 'CS3249', 'JAGDALE SAEE PRASHANT', 1, 'nil'),
+(2121141242129, 'CS3250', 'GAIKWAD SHUBHANGI RAMESH', 1, 'nil'),
+(2121141242130, 'CS3251', 'KADAM SHIVKUMAR SUNIL', 1, 'nil'),
+(2121141242131, 'CS3252', 'CHAVAN SANIKA SANTOSH', 1, 'nil'),
+(2121141242132, 'CS3253', 'KHANKE MRUNAL VISHNU', 1, 'nil'),
+(2121141242133, 'CS3254', 'JAIN SAMYAK DILIP', 1, 'nil'),
+(2121141242134, 'CS3255', 'BAHAKIM WALEED BIN JUMAN', 1, 'nil'),
+(2121141242135, 'CS3256', 'JADHAV ABHAY PRATAPRAO', 1, 'nil'),
+(2121141242136, 'CS3257', 'BHOSLE YASHWANT BHUJANGRAO', 1, 'nil'),
+(2121141242137, 'CS3258', 'DESHMUKH SHREYA GANESH', 1, 'nil'),
+(2121141242138, 'CS3259', 'AATIF AHMED ABDUL RAHEEM', 1, 'nil'),
+(2121141372071, 'CS3260', 'DALAL RUTUJA ANIL', 1, 'nil'),
+(2121141372130, 'CS3261', 'PAWAR SWAPNIL SURESH', 1, 'nil'),
+(2221141242501, 'CS3262', 'SONAWANE SNEHA VIJAY', 1, 'nil'),
+(2221141242502, 'CS3263', 'SARODE SIDDHANT SURAJ', 1, 'nil'),
+(2221141242503, 'CS3264', 'PATIL SAHIL SANJAY', 1, 'nil'),
+(2221141242504, 'CS3265', 'TRIBHUWAN SIDDHI SUDHAKAR', 1, 'nil'),
+(2221141242505, 'CS3266', 'KAKDE SAKSHI SANJAY', 1, 'nil'),
+(2221141242506, 'CS3267', 'KENDRE SHITAL VITTHAL', 1, 'nil'),
+(2221141242507, 'CS3268', 'DESHPANDE SAYLI ATUL', 1, 'nil'),
+(2221141242508, 'CS3269', 'GIRI SAMRUDDHI SHIRISH', 1, 'nil'),
+(2221141242509, 'CS3270', 'NILE VAISHALI KIRTIKUMAR ', 1, 'nil'),
+(2221141242510, 'CS3271', 'KSHIRSAGAR GARGI NANDKISHOR', 1, 'nil'),
+(2221141242511, 'CS3272', 'PRADHAN SNEHAL SANJAY', 1, 'nil'),
+(2221141242512, 'CS3273', 'DESHPANDE ADITI AJAY', 1, 'nil'),
+(2221141242513, 'CS3274', 'PENDHARKAR MANISHA LALSING', 1, 'nil'),
+(2221141242514, 'CS3275', 'DONGRE OM BHAGWAN', 1, 'nil'),
+(2221141242515, 'CS3276', 'HADULE ROHIT LAXMAN', 1, 'nil');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `register`
+--
+
+CREATE TABLE `register` (
+  `email` varchar(50) NOT NULL,
+  `password` varchar(8) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `register`
+--
+
+INSERT INTO `register` (`email`, `password`) VALUES
+('amolwakhare@dietms.org', '94238731'),
+('ashwinigaikwad@dietms.org', '98904621'),
+('ashwinijagnade@dietms.org', '94046112'),
+('gopalburkul@dietms.org', '70301537'),
+('hodcse@dietms.org', '90490093'),
+('madhubalachaudhari@dietms.org', '75888153'),
+('manishamundhe@dietms.org', '98233506'),
+('padmapanitribhuvan@dietms.org', '98905419'),
+('pankajdurole@dietms.org', '82080764'),
+('poonamborase@dietms.org', '78759694'),
+('pramodbhalerao@dietms.org', '95616443'),
+('pravinmahadik@dietms.org', '94237309'),
+('pravinrathod@dietms.org', '95455544'),
+('priyankadhas@dietms.org', '97667485'),
+('sandeepshah@dietms.org', '92253020'),
+('sarikasolanke@dietms.org', '94227214'),
+('sonalishelke@dietms.org', '96892563'),
+('vijaykolte@dietms.org', '94238175'),
+('vishalchauhan@dietms.org', '90280249');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tycse`
+--
+
+CREATE TABLE `tycse` (
+  `prn` decimal(20,0) NOT NULL,
+  `rollno` varchar(10) NOT NULL,
+  `name` varchar(50) NOT NULL,
+  `email` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `tycse`
+--
+
+INSERT INTO `tycse` (`prn`, `rollno`, `name`, `email`) VALUES
+(0, 'rollno', 'name', 'email'),
+(2121141242079, 'CS3201', 'HANGE YASHVANT MAHADEV', 'yashvanthange420@gmail.com'),
+(2121141242080, 'CS3202', 'LAKHE SHIVDATT RAMESH', 'Shivdattlakhe999@gmail.com '),
+(2121141242081, 'CS3203', 'KALDATE VAIBHAV GAJANAN', 'vaibhavkaldate19@gmail.com'),
+(2121141242082, 'CS3204', 'KOLHE SAMARTH SHAHU', 'samakolhe677@gmail.com'),
+(2121141242083, 'CS3205', 'JAWANJAL TANISHQ LAXMAN', 'jawanjaltanishq51@gmail.com'),
+(2121141242085, 'CS3206', 'GADEKAR OM HARIBHAU', 'omgadekar25@gmail.com '),
+(2121141242086, 'CS3207', 'BAWASKAR ANAND MAHESH', 'bawaskar126@gmail.com'),
+(2121141242087, 'CS3208', 'BAKHARE RUSHIKESH VIJAY', 'bakharerushikesh@gmail.com '),
+(2121141242088, 'CS3209', 'CHOPADE ANAND GANESH', 'chopadeanand268@gmail.com'),
+(2121141242089, 'CS3210', 'DUDHATE YOGESH MUNJAJI', 'dudhamunjaji@gmail.com'),
+(2121141242090, 'CS3211', 'AKADE UMESH RAMESH', 'umeshakade3@gmail.com '),
+(2121141242091, 'CS3212', 'CHOUDHARI DIVYA LAXMANRAO', 'divyachoudhari22@gmail.com'),
+(2121141242092, 'CS3213', 'DURPADE DHANASHREE BABURAO', 'dhanashreed887@gmail.com'),
+(2121141242093, 'CS3214', 'KAD ATHARVA DILIP', 'atharvakad02@gmail.com '),
+(2121141242094, 'CS3215', 'IDHATE NILESH BALA', 'nileshidhate4115@gmail.com'),
+(2121141242095, 'CS3216', 'GADEKAR SUYOG KAMALAKAR', 'Suyog9402@gmail.com'),
+(2121141242096, 'CS3217', 'CHAKRAVORTY DAYEETA TOOFAN', 'chakravortydayeeta@gmail.com'),
+(2121141242097, 'CS3218', 'SHAH KEDAR ARUN', 'kedarshah355@gmail.com'),
+(2121141242098, 'CS3219', 'TETWAR GAURAV RAJU', 'gauravtetwar99@gmail.com'),
+(2121141242099, 'CS3220', 'AUTE KRISHNA DNYANESHWAR', 'krishnadaute@gmail.com'),
+(2121141242100, 'CS3221', 'DARWANTE SWAPNIL DINKAR', 'swapnildarwante613@gmail.com'),
+(2121141242101, 'CS3222', 'ARAB ZOYA KHALID', 'arabzoya236@gmail.com '),
+(2121141242102, 'CS3223', 'BHISE PRATIKSHA MADAN', 'pratikshabhise87@gmail.com'),
+(2121141242103, 'CS3224', 'KHANDARE ANAGHA SANTOSH', 'khandareanagha2003@gmail.com'),
+(2121141242104, 'CS3225', 'KULKARNI SHANTANU ANANT', 'shantanumurtikar@gmail.com'),
+(2121141242105, 'CS3226', 'MESHRAM TEJAS CHAKRADHAR', 'tejasmeshram2909@gmail.com'),
+(2121141242106, 'CS3227', 'BAJPAI SNEHA VIJAY', 'sbehbajpai@gmail.com'),
+(2121141242107, 'CS3228', 'KULKARNI RUSHIKESH RAVINDRA', 'rushi.rk1710@gmail.com'),
+(2121141242108, 'CS3229', 'SADIYA FATIMA KHWAJA', 'khwajasadiya@gmail.com'),
+(2121141242109, 'CS3230', 'DESHMUKH RENUKA RAM', 'renukad99991@gmail.com'),
+(2121141242110, 'CS3231', 'KUNTE KHUSHI SANDEEP', 'Khushikunte1@gmail.com'),
+(2121141242111, 'CS3232', 'BHUJANG HEMANT ANAND', 'hemantbhujang517@gmail.com'),
+(2121141242112, 'CS3233', 'KHAN TABISH SHOKAT PATHAN', 'khantabish2448@gmail.com'),
+(2121141242113, 'CS3234', 'AGRAWAL MAYANK JAYESH', 'agrawalmayank.ma001@gmail.com'),
+(2121141242114, 'CS3235', 'CHOPDE ANIKET SOMNATH', 'aniketchopde03@gmail.com'),
+(2121141242115, 'CS3236', 'MISAL TEJAS RAMESH', 'tejasmisal2265@gmail.com'),
+(2121141242116, 'CS3237', 'MHATRE SAHIL RAJESH', 'sahilmhatre2666@gmail.com '),
+(2121141242117, 'CS3238', 'BHUTEKAR BHAGYASHRI ARUN', 'bhagyashribhutekar24@gmail.com '),
+(2121141242118, 'CS3239', 'CHAUDHARI ROHAN RANJIT', 'rohan.chaudhari963@gmail.com'),
+(2121141242119, 'CS3240', 'BAHIR ASHWINI LAXMAN', 'bahirashwini45@gmail.com'),
+(2121141242120, 'CS3241', 'KHANDARE RUPALI RAMESHWAR', 'rupalirkhandare20@gmail.com'),
+(2121141242121, 'CS3242', 'BHUJBAL PRASAD SANDEEP', 'p.s.bhujbal1234@gmail.com'),
+(2121141242122, 'CS3243', 'KULKARNI GAURAVI MILIND', 'gauravikulkarni163@gmail.com'),
+(2121141242123, 'CS3244', 'KULKARNI RENUKA SUDHIR', 'renukulkarni4545@gmail.com '),
+(2121141242124, 'CS3245', 'BIKKAD SIDDHI SUMANTRAO', 'siddhibikkad03@gmail.com '),
+(2121141242125, 'CS3246', 'DUBEY PRANJALI SATYANARAYAN', 'pranjalidubey0016@gmail.com '),
+(2121141242126, 'CS3247', 'AWASTHI SHRUTI SUSHIL', 'shrutiawasthi07@gmail.com'),
+(2121141242127, 'CS3248', 'KALAWAR POOJA GANGAREDDY', 'kalawarpooja@gmail.com'),
+(2121141242128, 'CS3249', 'JAGDALE SAEE PRASHANT', 'joej68902@gmail.com'),
+(2121141242129, 'CS3250', 'GAIKWAD SHUBHANGI RAMESH', 'Shubhangigaikwad1803@gmail.com'),
+(2121141242130, 'CS3251', 'KADAM SHIVKUMAR SUNIL', 'kadamshiv11@gmail.com'),
+(2121141242131, 'CS3252', 'CHAVAN SANIKA SANTOSH', 'sanikachavan1806@gmail.com '),
+(2121141242132, 'CS3253', 'KHANKE MRUNAL VISHNU', 'mrunalkhanke7@gmail.com'),
+(2121141242133, 'CS3254', 'JAIN SAMYAK DILIP', 'samyakdjain03@gmail.com '),
+(2121141242134, 'CS3255', 'BAHAKIM WALEED BIN JUMAN', 'waleedbahakim123@gmail.com'),
+(2121141242135, 'CS3256', 'JADHAV ABHAY PRATAPRAO', 'abhayjadhav8164@gmail.com'),
+(2121141242136, 'CS3257', 'BHOSLE YASHWANT BHUJANGRAO', 'bhosleyash18@gmail.com'),
+(2121141242137, 'CS3258', 'DESHMUKH SHREYA GANESH', 'deshmukhga101@gmail.com'),
+(2121141242138, 'CS3259', 'AATIF AHMED ABDUL RAHEEM', 'ideapadaatif@gmail.com'),
+(2121141372071, 'CS3260', 'DALAL RUTUJA ANIL', 'dalalrutuja2004@gmail.com'),
+(2121141372130, 'CS3261', 'PAWAR SWAPNIL SURESH', 'swapnilspawar8767@gmail.com'),
+(2221141242501, 'CS3262', 'SONAWANE SNEHA VIJAY', 'snehasonawane099@gmail.com'),
+(2221141242502, 'CS3263', 'SARODE SIDDHANT SURAJ', 'siddhantsarode07@gmail.com'),
+(2221141242503, 'CS3264', 'PATIL SAHIL SANJAY', 'sahilspatil6@gmail.com'),
+(2221141242504, 'CS3265', 'TRIBHUWAN SIDDHI SUDHAKAR', 'siddhitribhuwan@gmail.com'),
+(2221141242505, 'CS3266', 'KAKDE SAKSHI SANJAY', 'sakshi.kakde2004@gmail.com'),
+(2221141242506, 'CS3267', 'KENDRE SHITAL VITTHAL', 'shitalkendre049@gmail.com'),
+(2221141242507, 'CS3268', 'DESHPANDE SAYLI ATUL', 'amrutasayli@gmail.com'),
+(2221141242508, 'CS3269', 'GIRI SAMRUDDHI SHIRISH', 'samruddhi07giri@gmail.com'),
+(2221141242509, 'CS3270', 'NILE VAISHALI KIRTIKUMAR ', 'vaishalinile896@gmail.com'),
+(2221141242510, 'CS3271', 'KSHIRSAGAR GARGI NANDKISHOR', 'kshirsagargargi5@gmail.com'),
+(2221141242511, 'CS3272', 'PRADHAN SNEHAL SANJAY', 'snehalpradhan695@gmail.com'),
+(2221141242512, 'CS3273', 'DESHPANDE ADITI AJAY', 'daditideshpande28@gmail.com'),
+(2221141242513, 'CS3274', 'PENDHARKAR MANISHA LALSING', 'manishapendharkar2004@gmail.com'),
+(2221141242514, 'CS3275', 'DONGRE OM BHAGWAN', 'omdongre02@gmail.com'),
+(2221141242515, 'CS3276', 'HADULE ROHIT LAXMAN', 'rohithadule2000@gmail.com');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `account`
+--
+ALTER TABLE `account`
+  ADD PRIMARY KEY (`rollno`);
+
+--
+-- Indexes for table `library`
+--
+ALTER TABLE `library`
+  ADD PRIMARY KEY (`prn`);
+
+--
+-- Indexes for table `register`
+--
+ALTER TABLE `register`
+  ADD PRIMARY KEY (`email`);
+
+--
+-- Indexes for table `tycse`
+--
+ALTER TABLE `tycse`
+  ADD PRIMARY KEY (`prn`);
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

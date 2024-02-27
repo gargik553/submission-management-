@@ -8,33 +8,36 @@
     <title>DIEMS Account Section List</title>
     <link rel="stylesheet" href="css/table.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
+    
 
 </head>
 
 <body>
     <main class="table">
         <section class="table__header">
-            <h1>Annual Fees Dues List</h1>
+            <h2>Fees Dues</h2>
 			 <div class="container">
 			 
-             <form action="account_section.php.php" method="post">
+    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
         <label for="table_nm">Select a class:</label>
         <select name="table_nm" class="custom-select" type="submit" value="Fetch Data">
-            <option value="class2">sycse</option>
-            <option value="class3">tycse</option>
-            
-            
+            <option value="sycse">sycse</option>
+            <option value="tycse">tycse</option>           
         </select>
+        <button type="submit" class="btn btn-primary"
+        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+  Submit
+</button>
+        
     </div>
             
             <div class="export__file">
-                <label for="export-file" class="export__file-btn" title="Export File" >
-                </label>
+                <label for="export-file" class="export__file-btn" title="Export File" ></label>
                 <input type="checkbox" id="export-file">
                 <div class="export__file-options">
                     <label>Export As &nbsp; &#10140;</label>
-                    <label for="export-file" id="toPDF" title="Document">PDF <img src="pdf icon.png" alt=""></label>
-                    <label for="export-file" id="toEXCEL" onclick="downloadDatabase()" title="Document">EXCEL <img src="exel icon.png" alt=""></label>
+                    <label for="export-file" id="toPDF" title="Document">PDF <img src="img/pdf icon.png" alt=""></label>
+                    <label for="export-file" id="toEXCEL" onclick="downloadDatabase()" title="Document">EXCEL <img src="img/exel icon.png" alt=""></label>
                 </div>
             </div>
         </section>
@@ -52,27 +55,24 @@
 <?php
 include 'dbcon.php';
 
-if(isset($_POST['table_nm']) && isset($_POST['submit']))
-{
-$table_name = $_POST['table_nm'];
+// Check if the form has been submitted
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Get the selected table name from the form
+   
+    $table_nm = $_POST["table_nm"];
+    
+    // Prepare and execute the SQL query
+    $sql = "SELECT * FROM $table_nm";
+    $result = $con->query($sql);
 
-// Prepare SQL statement
-$sql = "SELECT * FROM $table_name";
-
-// Execute SQL statement
-$result = $con->query($sql);
-echo "<table id=myTable>";
-echo"<section class='table__body'>";
-// Check if any records were found
-if ($result->num_rows > 0) 
-{
-    // Output data of each row
-    while($row = $result->fetch_assoc())
-     {
+    // Check if there are any records
+    if ($result->num_rows > 0) {
+        // Output data of each row
+    while($row = $result->fetch_assoc()) {
     echo "<tr>";
     echo "<td>" . $row['roll_no'] . "</td>";
     echo "<td>" . $row['name'] . "</td>";
-	if($row['dues']==1)
+	if($row['account']==0)
 	{
 		 echo "<td> <input type='checkbox' checked> </td>";
 	}
@@ -85,15 +85,14 @@ if ($result->num_rows > 0)
 	echo "<td><input type='text' name='remark' value=". $row['remark'] ."></td><br>";
 	
     echo "</tr>";
+        }
+    } else {
+        echo "0 results";
     }
-} 
-echo "</table>";
-echo"</section>";
-
 }
+
 ?>
-                   <tbody>
-				  </tbody>
+                
             </table>
         </section>
 		   </main>

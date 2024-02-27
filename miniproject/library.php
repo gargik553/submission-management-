@@ -6,8 +6,10 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <meta http-equiv="X-UA-Compatible" content="ie=edge">
      <title>DIEMS Library Dues List</title>
-     <link rel="stylesheet" href="table.css">
-	 <link rel="stylesheet" type="text/css" href="styles.css">
+     <link rel="stylesheet" href="css/table.css">
+	 <link rel="stylesheet" type="css/text/css" href="css/styles.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
  </head>
  
  <body>
@@ -23,6 +25,7 @@
             <option value="class3">B.Tech</option>
             
         </select>
+        
     </div>
              
              <div class="export__file">
@@ -56,8 +59,7 @@ $hostname = 'localhost';
 $username = 'root';
 $password = '';
 $database = 'sign_db';
-echo "<link rel='stylesheet'  href='table.css'>";
-echo "<link rel='stylesheet'  href='styles.css'>";
+
 // Create a database connection
 $connection = mysqli_connect($hostname, $username, $password, $database);
 
@@ -77,9 +79,7 @@ if (!$result) {
     die("Query failed: " . mysqli_error($connection));
 }
 
-// Display the data
-echo "<table id=myTable>";
-echo"<section class='table__body'>";
+
 
 while ($row = mysqli_fetch_assoc($result)) {
     echo "<tr>";
@@ -100,9 +100,6 @@ while ($row = mysqli_fetch_assoc($result)) {
 	
     echo "</tr>";
 }
-echo "</table>";
-echo"</section>";
-
 // Close the database connection
 mysqli_close($connection);
 ?>

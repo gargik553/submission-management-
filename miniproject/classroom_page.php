@@ -9,6 +9,7 @@
 
         <!-- CSS -->
         <link rel="stylesheet" href="css/classroom_page.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
                                         
     </head>
     <body>
@@ -44,7 +45,7 @@
                         <div class="card-content">
                             <h2 class="name">Student Section</h2>
                             <p class="description">To know the status of caste certificate submission.</p>
-                            <button class="button"><a href="student.html">Click here</button></a>
+                            <button class="button" style="color:red"><a href="student.html">Click here</button></a>
                         </div>
                     </div>
 
@@ -74,8 +75,9 @@
                         <div class="card-content">
                             <h2 class="name">Class Teacher</h2>
                             <p class="description">To get the defaulter list and mark sheets of students.</p>
+                            <button class="button" ><a href="#">Click here</button></a>
 
-                            <button class="button"><a href="class_teacher.html">Click here</button></a>
+                    
                         </div>
                     </div>
 
@@ -120,7 +122,8 @@
             <div class="swiper-button-prev swiper-navBtn"></div>
             <div class="swiper-pagination"></div>
         </div>
-        
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </body>
 
 </html>
